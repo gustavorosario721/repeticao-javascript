@@ -1,0 +1,121 @@
+:root {
+    --js-yellow: #f7df1e;
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-color: #f8fafc;
+    --text-muted: #94a3b8;
+    --accent-color: #38bdf8;
+    --border-color: #334155;
+    --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding-bottom: 2rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+header {
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: var(--js-yellow);
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.console-notice {
+    background-color: rgba(56, 189, 248, 0.08);
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.console-notice h2 {
+    color: var(--accent-color);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+kbd {
+    background-color: var(--border-color);
+    color: var(--js-yellow);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+.exercicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--js-yellow);
+}
+
+.badge {
+    display: inline-block;
+    background-color: var(--border-color);
+    color: var(--accent-color);
+    font-family: monospace;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    margin-bottom: 0.8rem;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
