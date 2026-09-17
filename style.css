@@ -47,33 +47,11 @@ header p {
     font-size: 1.1rem;
 }
 
-.console-notice {
-    background-color: rgba(56, 189, 248, 0.08);
-    border: 1px solid var(--accent-color);
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin: 2rem 0;
-}
-
-.console-notice h2 {
-    color: var(--accent-color);
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-}
-
-kbd {
-    background-color: var(--border-color);
-    color: var(--js-yellow);
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
-    font-family: monospace;
-    font-size: 0.9em;
-}
-
 .exercicios-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
+    margin-top: 2rem;
 }
 
 .card {
@@ -81,6 +59,9 @@ kbd {
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
@@ -91,6 +72,7 @@ kbd {
 
 .badge {
     display: inline-block;
+    align-self: flex-start;
     background-color: var(--border-color);
     color: var(--accent-color);
     font-family: monospace;
@@ -111,15 +93,6 @@ kbd {
     font-size: 0.95rem;
 }
 
-footer {
-    text-align: center;
-    margin-top: 3rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--border-color);
-    color: var(--text-muted);
-    font-size: 0.9rem;
-}
-
 .resultado {
     margin-top: 1rem;
     padding: 0.75rem;
@@ -130,8 +103,31 @@ footer {
     font-size: 0.9rem;
     color: var(--js-yellow);
     max-height: 160px;
+    min-height: 42px;
     overflow-y: auto;
     line-height: 1.5;
+}
+
+.btn-gerar {
+    margin-top: 0.8rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--js-yellow);
+    color: var(--bg-color);
+    font-weight: bold;
+    font-family: var(--font-sans);
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.1s;
+}
+
+.btn-gerar:hover {
+    opacity: 0.85;
+}
+
+.btn-gerar:active {
+    transform: scale(0.98);
 }
 
 .input-group {
@@ -169,3 +165,13 @@ footer {
 .input-group button:hover {
     opacity: 0.85;
 }
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
