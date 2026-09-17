@@ -119,3 +119,53 @@ footer {
     color: var(--text-muted);
     font-size: 0.9rem;
 }
+
+.resultado {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: var(--js-yellow);
+    max-height: 160px;
+    overflow-y: auto;
+    line-height: 1.5;
+}
+
+.input-group {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-sans);
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: var(--accent-color);
+}
+
+.input-group button {
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--js-yellow);
+    color: var(--bg-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.input-group button:hover {
+    opacity: 0.85;
+}

@@ -16,65 +16,72 @@
     </header>
 
     <main class="container">
-        <section class="console-notice">
-            <h2>💡 Como visualizar os resultados</h2>
-            <p>Os exercícios executam suas saídas no <strong>Console do Navegador</strong>.</p>
-            <p>Pressione <kbd>F12</kbd> (ou <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> / <kbd>Cmd</kbd> + <kbd>Option</kbd> + <kbd>I</kbd>) e selecione a aba <strong>Console</strong> para ver a execução dos códigos.</p>
-        </section>
-
         <section class="exercicios-grid">
             <article class="card">
                 <span class="badge">for</span>
                 <h3>Ex. 01 - Contagem de 1 a 10</h3>
                 <p>Exibe os números de 1 até 10 em ordem crescente.</p>
+                <div class="resultado" id="res-1"></div>
             </article>
 
             <article class="card">
                 <span class="badge">for</span>
                 <h3>Ex. 02 - Tabuada</h3>
-                <p>Gera automaticamente a tabuada de multiplicação de um número.</p>
+                <p>Digite um número para gerar a tabuada de multiplicação:</p>
+                <div class="input-group">
+                    <input type="number" id="numTabuada" placeholder="Ex: 7" value="7">
+                    <button onclick="gerarTabuada()">Gerar</button>
+                </div>
+                <div class="resultado" id="res-2"></div>
             </article>
 
             <article class="card">
                 <span class="badge">while</span>
                 <h3>Ex. 03 - Soma de 1 a 100</h3>
                 <p>Calcula o acumulador da soma sequencial de 1 até 100.</p>
+                <div class="resultado" id="res-3"></div>
             </article>
 
             <article class="card">
                 <span class="badge">while</span>
                 <h3>Ex. 04 - Números Pares</h3>
                 <p>Identifica e exibe todos os números pares de 0 a 20.</p>
+                <div class="resultado" id="res-4"></div>
             </article>
 
             <article class="card">
                 <span class="badge">do...while</span>
                 <h3>Ex. 05 - Contagem Regressiva</h3>
-                <p>Realiza uma contagem regressiva de 10 até 1 no console.</p>
+                <p>Realiza uma contagem regressiva de 10 até 1.</p>
+                <div class="resultado" id="res-5"></div>
             </article>
 
             <article class="card">
                 <span class="badge">for...in</span>
                 <h3>Ex. 06 - Propriedades de Objeto</h3>
                 <p>Percorre um objeto e exibe suas chaves e valores associados.</p>
+                <div class="resultado" id="res-6"></div>
             </article>
 
             <article class="card">
                 <span class="badge">for...of</span>
                 <h3>Ex. 07 - Média de Notas</h3>
                 <p>Percorre um array de notas para calcular a média final.</p>
+                <div class="resultado" id="res-7"></div>
             </article>
 
             <article class="card">
                 <span class="badge">for</span>
                 <h3>Ex. 08 - Números Ímpares</h3>
                 <p>Filtra e exibe os números ímpares no intervalo de 1 a 50.</p>
+                <div class="resultado" id="res-8"></div>
             </article>
 
             <article class="card">
                 <span class="badge">for</span>
                 <h3>Ex. 09 - Contador Regressivo</h3>
                 <p>Simula um contador de encerramento regressivo de 10 a 0.</p>
+                <div class="resultado" id="res-9"></div>
             </article>
         </section>
     </main>
@@ -82,6 +89,8 @@
     <footer>
         <p>Aluno: Gustavo do Rosário Alves da Silva &bull; Prof. Celso Barreto</p>
     </footer>
+
     <script src="exercicios.js"></script> 
 </body>
 </html>
+
